@@ -1,0 +1,2 @@
+# red
+Stupid competition
