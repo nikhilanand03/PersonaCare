@@ -1,6 +1,7 @@
 import { ChangeEvent, useState } from 'react';
 import { CircleLoader } from 'react-spinners';
 import insertDocument from '../apis/insertDocument';
+import './component_styles.scss'
 
 // interface HTMLInputEvent extends ChangeEvent {
 //     target: HTMLInputElement & EventTarget;
@@ -31,6 +32,9 @@ const Upload = () => {
 
     return (
         <div className='uploader'>
+            <div className="EHRLabel">
+                Please Upload your EHRs Below!
+            </div>
             <input
                 className='uploader__input'
                 type='file'
@@ -40,8 +44,6 @@ const Upload = () => {
                 onChange={changeHandler}
             />
 
-            <span>Upload file</span>
-
             {isFilePicked && selectedFile ? (
                 <div className='uploader__details'>
                     <div className='uploader__details'>
@@ -50,7 +52,7 @@ const Upload = () => {
                 </div>
             ) : (
                 <div className='uploader__details'>
-                    <p>Select a file to insert</p>
+                    <p>Please select a file</p>
                 </div>
             )}
 

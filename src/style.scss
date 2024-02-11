@@ -35,3 +35,51 @@ $theme-colors: (
   body {
     font-family: 'Open sans', sans-serif;
   }
+  
+.bigButton {
+  border-radius: 2em;
+  color: black !important;
+  background-color: white;
+  font-size: 2em;
+  font-family: monospace;
+  height:100px;
+  width:200px;
+}
+
+.bigButton {
+  border-radius: 2em;
+  color: black !important;
+  background-color: white;
+  font-size: 2em;
+  font-family: monospace;
+  height:100px;
+  width:200px;
+}
+
+.back{
+  height:100px;
+  position:absolute;
+  left:20px
+}
+
+.smallButton {
+  border-radius: 2em;
+  color: black !important;
+  background-color: white;
+  font-size: 2em;
+  font-family: monospace;
+  height:50px;
+  width:100px;
+}
+
+.backContainer{
+  width:100%;
+}
+
+.container{
+  width:100%;
+}
+
+.doc{
+  padding-top:1em
+}

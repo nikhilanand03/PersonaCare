@@ -6,7 +6,7 @@ from werkzeug.utils import secure_filename
 import logging
 import sys
 
-
+PORT=8000
 app = Flask(__name__)
 CORS(app)
 
@@ -62,4 +62,4 @@ def home():
     return "Hello, World! Welcome to the llama_index docker image!"
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=PORT, debug=True)

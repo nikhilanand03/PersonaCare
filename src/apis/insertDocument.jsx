@@ -3,7 +3,7 @@ const insertDocument = async (file) => {
     formData.append('file', file);
     formData.append('filename_as_doc_id', 'true');
   
-    const response = await fetch('http://localhost:5000/uploadFile', {
+    const response = await fetch('http://localhost:8000/uploadFile', {
       mode: 'cors',
       method: 'POST',
       body: formData,

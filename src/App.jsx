@@ -7,34 +7,41 @@ import React from 'react'
 import { render } from 'react-dom'
 import VideoRecorder from 'react-video-recorder'
 import WebcamStreamCapture from './WebcamStreamCapture'
-import { useState } from 'react';
+
 
 function App() {
   // const [home, setHome] = useState(0);
   const [state,setState] = useState(1)
     return (
+
       <div className='app'>
-        <Header />
-      <div className='content'>
-        <HomePage />
-        <Upload />
-        { state ? 
         
-        <div width='100px' height='100px'>
-          <button style={{color:"red"}} onClick={()=> setState(0)} type="button"> Talk to Bot </button>
-        </div>
-
-        :
-
+        { state ? 
         <div>
-          <div className="doc">
-            <img src="doc.jpg" width="550px"></img>
+        <Header />
+        <div className='content'>
+          <HomePage />
+          <Upload />
+        </div>
+        <div width='100px' height='100px'>
+          <button style={{color:"red"}} onClick={()=> setState(0)} type="button" className="bigButton"> Consult a Bot! </button>
+        </div>
+        </div>
+        :
+        <div className="container">
+          <div className="backContainer">
+            <a href="default.asp"><img src="back.webp" className="back"/></a>
           </div>
-          <WebcamStreamCapture />
-          
+          <div>
+            <div className="doc">
+              <img src="doc.jpg" width="550px"></img>
+            </div>
+            <WebcamStreamCapture />
+            
+          </div>
         </div>
       }
-      </div>
+      
     </div>
     )
   }

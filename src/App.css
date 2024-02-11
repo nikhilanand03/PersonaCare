@@ -37,10 +37,6 @@
   }
 }
 
-.doc{
-  width: 100%;
-}
-
 .siri{
   width:100%;
   height:10px;
@@ -58,4 +54,8 @@
 
 .startButton {
   display:none
+}
+
+.transcript{
+  color:white
 }

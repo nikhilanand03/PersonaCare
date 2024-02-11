@@ -25,7 +25,7 @@ const Dictaphone = (props) => {
             {listening ? <img src = "apple_siri.gif" height="100px"/> : <img src = "static_siri.png" height="100px" onLoad={()=>{if(props.capturing) props.stopCapture();}}/>}
         </div>
       </button>
-      <p>{transcript}</p>
+      <p className="transcript">{transcript}</p>
     </div>
   );
 };
