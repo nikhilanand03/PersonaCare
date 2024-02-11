@@ -1,0 +1,37 @@
+The patient ID is D362BDF5-91CD-46CC-B0C3-DB2D0A3E129B.
+The disease/s being faced by the patient is/are Rheumatoid arthritis without rheumatoid factor, multiple sites Diabetes mellitus due to underlying condition with diabetic arthropathy Encounter for screening for malignant neoplasm of small intestine.
+
+The various test levels of the patient is/are
+0. The lab METABOLIC: TOTAL PROTEIN gave its level as 7.5 gm/dL.
+1. The lab URINALYSIS: PH gave its level as 5.5 no unit.
+2. The lab CBC: WHITE BLOOD CELL COUNT gave its level as 8.8 k/cumm.
+3. The lab CBC: MCH gave its level as 35.1 pg.
+4. The lab METABOLIC: CALCIUM gave its level as 7.5 mg/dL.
+5. The lab URINALYSIS: WHITE BLOOD CELLS gave its level as 5.7 wbc/hpf.
+6. The lab METABOLIC: BUN gave its level as 5.8 mg/dL.
+7. The lab METABOLIC: AST/SGOT gave its level as 19.3 U/L.
+8. The lab CBC: RED BLOOD CELL COUNT gave its level as 3.0 m/cumm.
+9. The lab CBC: NEUTROPHILS gave its level as 9.4 k/cumm.
+10. The lab METABOLIC: SODIUM gave its level as 138.2 mmol/L.
+11. The lab METABOLIC: ALK PHOS gave its level as 141.0 U/L.
+12. The lab CBC: EOSINOPHILS gave its level as 0.5 k/cumm.
+13. The lab URINALYSIS: RED BLOOD CELLS gave its level as 0.4 rbc/hpf.
+14. The lab CBC: PLATELET COUNT gave its level as 422.6 k/cumm.
+15. The lab CBC: BASOPHILS gave its level as 0.2 k/cumm.
+16. The lab CBC: MONOCYTES gave its level as 0.4 k/cumm.
+17. The lab METABOLIC: CARBON DIOXIDE gave its level as 33.7 mmol/L.
+18. The lab CBC: ABSOLUTE LYMPHOCYTES gave its level as 34.7 %.
+19. The lab CBC: HEMOGLOBIN gave its level as 12.3 gm/dl.
+20. The lab CBC: MEAN CORPUSCULAR VOLUME gave its level as 98.7 fl.
+21. The lab CBC: MCH gave its level as 34.8 pg.
+22. The lab CBC: MCHC gave its level as 32.7 g/dl.
+23. The lab CBC: WHITE BLOOD CELL COUNT gave its level as 4.3 k/cumm.
+24. The lab METABOLIC: AST/SGOT gave its level as 23.1 U/L.
+25. The lab CBC: RED BLOOD CELL COUNT gave its level as 6.7 m/cumm.
+26. The lab URINALYSIS: SPECIFIC GRAVITY gave its level as 1.0 no unit.
+27. The lab CBC: LYMPHOCYTES gave its level as 2.2 k/cumm.
+28. The lab METABOLIC: CALCIUM gave its level as 8.6 mg/dL.
+29. The lab METABOLIC: TOTAL PROTEIN gave its level as 5.8 gm/dL.
+
+The background of the patient is 
+The patient gender is Male. The date of birth of the person is 1962-02-21 00:59:47.940. The patient is from White ethnicity. The marital status of the person is Married. The patient speaks English language. The patient population percentage that is below poverty is 15.26.

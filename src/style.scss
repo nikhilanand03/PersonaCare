@@ -1,0 +1,37 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+$theme-colors: (
+  primary: #190c40,
+  secondary: #449dd1,
+  secondary-hover: #78c0e0,
+  text-main: #000000,
+  text-contrast: #ffffff,
+  header-big-block: #e08dac,
+);
+
+@function theme-color($key) {
+    @return map-get($theme-colors, $key);
+}
+
+@import './components/component_styles';
+
+.app {
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: theme-color(primary);
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+  
+  body {
+    font-family: 'Open sans', sans-serif;
+  }

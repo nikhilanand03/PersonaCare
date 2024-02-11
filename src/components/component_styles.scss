@@ -1,0 +1,75 @@
+/** Header.jsx **/
+.app-header {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    width: 1280px;
+
+    &__left{
+        height:80%;
+        margin-top:0;
+        background-color: theme-color(secondary-hover);
+        width: 15%;
+    }
+  
+    &__main {
+      display: flex;
+      align-items: center;
+      width: 15%;
+      background-color: theme-color(header-big-block);
+      color: theme-color(text-contrast);
+    
+  
+      p {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        font-size: 25px;
+        font-weight: 600;
+        padding-bottom: 5px;
+      }
+    }
+  
+    &__sub {
+      display: flex;
+      align-items: flex-start;
+      width: 100%;
+      color: theme-color(text-main);
+  
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 10%;
+        width: 100%;
+        // position: absolute;
+        height: 80%;
+        margin-top: 0;
+        background-color: theme-color(secondary-hover);
+        p {
+          text-align: right;
+          margin: 0;
+          font-size: 25px;
+          font-weight: 400;
+          padding-bottom: 5px;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+.home{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: theme-color(primary);
+    color: theme-color(text-contrast);
+    width: 100%;
+    height: 35%;
+    padding-top: 2%;
+
+    &.doc-img{
+        width:50px;
+    }
+}
