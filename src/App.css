@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #190c40;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.doc{
+  width: 100%;
+}
+
+.siri{
+  width:100%;
+  height:10px;
+}
+
+.button{
+  border:none;
+  padding:0;
+  background-color: #190c40;
+}
+
+.webcam {
+  display: none;
+}
+
+.startButton {
+  display:none
 }
