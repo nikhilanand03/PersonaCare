@@ -1,3 +1,12 @@
+# Install NeMo library. If you are running locally (rather than on Google Colab), comment out the below lines
+# and instead follow the instructions at https://github.com/NVIDIA/NeMo#Installation
+BRANCH = 'r1.22.0'
+!python -m pip install git+https://github.com/NVIDIA/NeMo.git@$BRANCH#egg=nemo_toolkit[all]
+# Download local version of NeMo scripts. If you are running locally and want to use your own local NeMo code,
+# comment out the below lines and set NEMO_DIR to your local path.
+NEMO_DIR = 'nemo'
+!git clone https://github.com/NVIDIA/NeMo.git $NEMO_DIR
+
 # Installations for different important libraries
 !pip install llama_index
 !pip install --upgrade -q accelerate bitsandbytes
@@ -61,6 +70,10 @@ def inference(video_path):
 
 from llama_index import VectorStoreIndex, SimpleDirectoryReader
 from llama_index.llms import OpenAI
+import IPython.display as ipd
+from matplotlib.pyplot import imshow
+from matplotlib import pyplot as plt
+from nemo.collections.tts.models.base import SpectrogramGenerator, Vocoder
 
 def generate(query, emotion):
     os.environ["OPENAI_API_KEY"] = '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'
@@ -81,7 +94,25 @@ def generate(query, emotion):
     
     final_prompt = "Given the query: {}, the details of the condition faced by the patient {}, and the user's emotion: {}, generate only the consultant's reply and nothing else:".format(actual_query,context_response,emotion)
     query_engine = index.as_query_engine(llm=model)
-    output = query_engine.query(final_prompt)
+    output_text = str(query_engine.query(final_prompt))
+
+    # Load our spectrogram and vocoder models onto our CPU
+    spectrogram_model = SpectrogramGenerator.from_pretrained("tts_en_tacotron2").eval()
+    vocoder = Vocoder.from_pretrained("tts_en_hifigan").eval()
+
+    tokens = spectrogram_model.parse(output_text, normalize=True)
+
+    # Generate spectrogram from text
+    spectrogram = spectrogram_model.generate_spectrogram(tokens=tokens)
+
+    # Invert the spectrogram into audio samples
+    audio = vocoder.convert_spectrogram_to_audio(spec=spectrogram)
+
+    # Convert output from pytorch tensor to numpy array
+    spectrogram = spectrogram.cpu().detach().numpy()[0]
+    audio = audio.cpu().detach().numpy()[0]
+
+    return ipd.Audio(audio, rate=20000)
     
     return output
 
